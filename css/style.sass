@@ -224,22 +224,51 @@ header
 
 .encadrement
   display: flex
+  align-content: center
+  justify-content: center
   border-radius: 1rem
-  padding: 2rem
-  margin: 1rem
+  padding: 4rem
+  margin: 2rem
   font-family: $Mons
   position: relative
-  height: 500px
   & img
     position: absolute
-    height: 80%
-    top: 0
-    right: 50%
+    height: 100%
+    top: -50px
+    right: 40%
   & .infoL
     left: 0
-    width: 50%
+    width: 80%
+    & h1
+      font-size: 4rem
+      font-family: sans-serif
+      font-weight: 900
   & .infoR
+    display: flex
+    flex-direction: column
     right: 0
     width: 50%
+    & .buttonw
+      width: 30%
+      margin-block: 1rem
+      color: black
+.bestSeller
+  h1 ,p
+    color: $noir
 
-
+.products
+  display: flex
+  flex-wrap: wrap
+  & .product
+    height: 50%
+    width: 20%
+    margin: 1rem
+    & h2
+      font-family: $Mons
+      color: $noir
+    & img
+      height: 100%
+      width: 100%
+      background: #d6d6d6
+      padding: 1rem
+      border-radius: 1rem
