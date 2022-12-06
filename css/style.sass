@@ -1,0 +1,245 @@
+//colors
+$rougebg: linear-gradient(147deg, #db3445 0%, #f71735 74%)
+$rouge: #ff001b
+$grisbg: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%)
+$gris: #808080
+$noirbg: linear-gradient(315deg, #000000 0%, #414141 74%)
+$noir: #000000
+$jaunebg: linear-gradient(315deg, #ffdd00 0%, #fbb034 74%)
+$jaune: #ffdd00
+$vertbg: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%)
+$vert: #3bb78f
+$blebg: linear-gradient(315deg, #09c6f9 0%, #045de9 74%)
+$bleu: #09c6f9
+$grisTrans: rgba(255, 255, 255, 0.5)
+$blanc: #f6f6f6
+
+//font
+$spartan: Spartan, serif
+$Mons: "Montserrat"
+
+//init
+*, *::before, *::after
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+b
+  color: $noir
+
+.cont
+  color: $blanc
+  margin: 0 auto
+  max-width: 1100px
+
+
+//header
+header
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+.logo
+  a
+    text-decoration: none
+  &__title
+    font-family: $spartan
+    font-weight: lighter
+    letter-spacing: .4rem
+    color: $rouge
+
+.nav
+  display: flex
+  flex-grow: 3
+  justify-content: flex-start
+  gap: 3rem
+  margin-inline: 2rem
+  &__links
+    gap: 5rem
+    font-family: $Mons
+    color: $gris
+    text-decoration: none
+    transition: 1s
+    &:hover
+      text-decoration: underline
+      color: $noir
+      transform: scale(.9)
+
+.links
+  display: flex
+  gap: 1rem
+  .link
+    font-family: $Mons
+    color: $noir
+    font-size: 1.2rem
+    text-decoration: none
+
+
+
+.globaldiv
+  display: grid
+  margin-bottom: 3rem
+  grid-template-rows: 1fr 2fr 1fr
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-areas: "headphone headphone headphone headphone" "headphone headphone headphone headphone" "earphone gadget laptop laptop" "console console oculus speaker"
+  font-family: sans-serif
+  & img
+    position: absolute
+  & .txtW
+    color: $blanc
+    font-size: 3rem
+  & h1
+    color: $grisTrans
+    font-family: sans-serif
+    font-weight: 900
+  & .black
+    color: $noir
+  & div
+    position: relative
+    font-family: sans-serif
+    margin: .5rem
+    border-radius: 20px
+    padding-block: 5rem
+    padding-inline: 2rem
+
+
+
+.speaker
+  & .buttonw
+    color: $bleu
+  grid-area: speaker
+  background: $blebg
+  & img
+    height: 45%
+    rotate: 30deg
+    bottom: 10px
+    right: 50px
+
+.oculus
+  & .buttonw
+    color: $vert
+  grid-area: oculus
+  background: $vertbg
+  & img
+    width: 100%
+    bottom: 0
+    right: 0
+    border-radius: 20px
+.console
+  grid-area: console
+  background: $grisbg
+  & img
+    height: 100%
+    bottom: 0
+    right: 0
+    padding-inline: 2rem
+    padding-block: 1rem
+.laptop
+  & .buttonw
+    color: $rouge
+  grid-area: laptop
+  background: $rougebg
+  & img
+    height: 100%
+    bottom: 0
+    right: 0
+    padding-inline: 2rem
+    padding-block: 1rem
+.gadget
+  & .buttonw
+    color: $jaune
+  grid-area: gadget
+  background: $jaunebg
+  & img
+    height: 60%
+    top: 0
+    right: 0
+    padding-inline: 1rem
+    padding-block: .5rem
+.earphone
+  grid-area: earphone
+  background: $noirbg
+  & img
+    height: 100%
+    top: 0
+    right: 0
+    padding-inline: 1rem
+    padding-block: .5rem
+.headphone
+  grid-area: headphone
+  background: $grisbg
+  & h1
+    font-weight: 900
+  & .txtW
+    font-size: 9rem
+  & p
+    color: $noir
+    bottom: 0
+    right: 0
+    height: 20%
+    padding-block: .5rem
+  & img
+    height: 50%
+    top: 0
+    right: 250px
+    padding-inline: 1rem
+    padding-block: .5rem
+    transform: rotate(20deg)
+
+.buttonw
+  background: $blanc
+  border-radius: 25px
+  padding-block: .5rem
+  padding-inline: 2rem
+  text-decoration: none
+
+.buttonr
+  background: #DB3345
+  color: $blanc
+  border-radius: 25px
+  padding-block: .5rem
+  padding-inline: 2rem
+  text-decoration: none
+
+
+
+
+.elmts
+  display: flex
+  margin: 1rem
+  & .elmt
+    display: flex
+    flex-direction: row
+    & i
+      color: $rouge
+      font-size: 4rem
+    & p
+      color: $noir
+      font-family: $Mons
+
+.rouge
+  background: $rougebg
+.vert
+    background: $vertbg
+
+.encadrement
+  display: flex
+  border-radius: 1rem
+  padding: 2rem
+  margin: 1rem
+  font-family: $Mons
+  position: relative
+  height: 500px
+  & img
+    position: absolute
+    height: 80%
+    top: 0
+    right: 50%
+  & .infoL
+    left: 0
+    width: 50%
+  & .infoR
+    right: 0
+    width: 50%
+
+

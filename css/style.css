@@ -1,0 +1,270 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+b {
+  color: #000000;
+}
+
+.cont {
+  color: #f6f6f6;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+.logo__title {
+  font-family: Spartan, serif;
+  font-weight: lighter;
+  letter-spacing: 0.4rem;
+  color: #ff001b;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 3;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-inline: 2rem;
+}
+.nav__links {
+  gap: 5rem;
+  font-family: "Montserrat";
+  color: #808080;
+  text-decoration: none;
+  transition: 1s;
+}
+.nav__links:hover {
+  text-decoration: underline;
+  color: #000000;
+  transform: scale(0.9);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+.links .link {
+  font-family: "Montserrat";
+  color: #000000;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.globaldiv {
+  display: grid;
+  margin-bottom: 3rem;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "headphone headphone headphone headphone" "headphone headphone headphone headphone" "earphone gadget laptop laptop" "console console oculus speaker";
+  font-family: sans-serif;
+}
+.globaldiv img {
+  position: absolute;
+}
+.globaldiv .txtW {
+  color: #f6f6f6;
+  font-size: 3rem;
+}
+.globaldiv h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
+  font-weight: 900;
+}
+.globaldiv .black {
+  color: #000000;
+}
+.globaldiv div {
+  position: relative;
+  font-family: sans-serif;
+  margin: 0.5rem;
+  border-radius: 20px;
+  padding-block: 5rem;
+  padding-inline: 2rem;
+}
+
+.speaker {
+  grid-area: speaker;
+  background: linear-gradient(315deg, #09c6f9 0%, #045de9 74%);
+}
+.speaker .buttonw {
+  color: #09c6f9;
+}
+.speaker img {
+  height: 45%;
+  rotate: 30deg;
+  bottom: 10px;
+  right: 50px;
+}
+
+.oculus {
+  grid-area: oculus;
+  background: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+.oculus .buttonw {
+  color: #3bb78f;
+}
+.oculus img {
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  border-radius: 20px;
+}
+
+.console {
+  grid-area: console;
+  background: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+}
+.console img {
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+.laptop {
+  grid-area: laptop;
+  background: linear-gradient(147deg, #db3445 0%, #f71735 74%);
+}
+.laptop .buttonw {
+  color: #ff001b;
+}
+.laptop img {
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+.gadget {
+  grid-area: gadget;
+  background: linear-gradient(315deg, #ffdd00 0%, #fbb034 74%);
+}
+.gadget .buttonw {
+  color: #ffdd00;
+}
+.gadget img {
+  height: 60%;
+  top: 0;
+  right: 0;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.earphone {
+  grid-area: earphone;
+  background: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+.earphone img {
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.headphone {
+  grid-area: headphone;
+  background: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+}
+.headphone h1 {
+  font-weight: 900;
+}
+.headphone .txtW {
+  font-size: 9rem;
+}
+.headphone p {
+  color: #000000;
+  bottom: 0;
+  right: 0;
+  height: 20%;
+  padding-block: 0.5rem;
+}
+.headphone img {
+  height: 50%;
+  top: 0;
+  right: 250px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  transform: rotate(20deg);
+}
+
+.buttonw {
+  background: #f6f6f6;
+  border-radius: 25px;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  text-decoration: none;
+}
+
+.buttonr {
+  background: #DB3345;
+  color: #f6f6f6;
+  border-radius: 25px;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  text-decoration: none;
+}
+
+.elmts {
+  display: flex;
+  margin: 1rem;
+}
+.elmts .elmt {
+  display: flex;
+  flex-direction: row;
+}
+.elmts .elmt i {
+  color: #ff001b;
+  font-size: 4rem;
+}
+.elmts .elmt p {
+  color: #000000;
+  font-family: "Montserrat";
+}
+
+.rouge {
+  background: linear-gradient(147deg, #db3445 0%, #f71735 74%);
+}
+
+.vert {
+  background: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+
+.encadrement {
+  display: flex;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  font-family: "Montserrat";
+  position: relative;
+  height: 500px;
+}
+.encadrement img {
+  position: absolute;
+  height: 80%;
+  top: 0;
+  right: 50%;
+}
+.encadrement .infoL {
+  left: 0;
+  width: 50%;
+}
+.encadrement .infoR {
+  right: 0;
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
